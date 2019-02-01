@@ -19,7 +19,6 @@ public class Solution {
             sum += number;
             i++;
         }
-
         System.out.println((float) sum/i);
     }
 }
