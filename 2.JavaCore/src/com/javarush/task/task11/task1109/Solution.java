@@ -27,7 +27,7 @@ class Cat {
         return name;
     }
 
-    private int getSpeed() {
+    public int getSpeed() {
         return speed;
     }
 
@@ -49,7 +49,7 @@ class Dog {
         return name;
     }
 
-    private int getSpeed() {
+    public int getSpeed() {
         return speed;
     }
 
