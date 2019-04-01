@@ -1,7 +1,7 @@
-package com.javarush.task.task12.task1219;
+package com.javarush.task.task12.task1227;
 
 /* 
-Создаем человека
+CanFly, CanRun, CanSwim для классов Duck, Penguin, Toad
 */
 
 public class Solution {
@@ -21,20 +21,7 @@ public class Solution {
         public void swim();
     }
 
-
-    public class Human implements CanRun, CanSwim {
-        @Override
-        public void run() {
-
-        }
-
-        @Override
-        public void swim() {
-
-        }
-    }
-
-    public class Duck implements CanFly, CanSwim, CanRun {
+    public class Duck implements CanFly, CanRun, CanSwim {
         @Override
         public void fly() {
 
@@ -51,7 +38,7 @@ public class Solution {
         }
     }
 
-    public class Penguin implements CanSwim, CanRun {
+    public class Penguin implements CanRun, CanSwim {
         @Override
         public void run() {
 
@@ -63,14 +50,9 @@ public class Solution {
         }
     }
 
-    public class Airplane implements CanFly, CanRun {
+    public class Toad implements CanSwim {
         @Override
-        public void fly() {
-
-        }
-
-        @Override
-        public void run() {
+        public void swim() {
 
         }
     }
